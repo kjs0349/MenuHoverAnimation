@@ -25,6 +25,7 @@ h1 {
     color: #000;
     font-weight: 400;
     font-size: 1.2em;
+    transition: .3s;
 }
 
 .target {
