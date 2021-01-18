@@ -48,6 +48,7 @@ function mouseLeave() {
     for(let i = 0; i < links.length; i++) {
         links[i].style.opacity = '1';
         target.style.borderColor = 'transparent';
+        links[i].parentNode.classList.remove('active');
     }
 }
 
