@@ -5,7 +5,6 @@ const colors = ['#1abc9c', '#27ae60', '#3498db', '#8e44ad', '#f1c40f', '#e67e22'
 for(let i = 0; i < links.length; i++){
     links[i].addEventListener('click', e => e.preventDefault());
     links[i].addEventListener('mouseenter', mouseHover);
-
 }
 
 function mouseHover() {
@@ -37,3 +36,19 @@ function mouseHover() {
     }
 }
 
+window.addEventListener('resize', resizeScreen);
+
+function resizeScreen() {
+    const active = document.querySelector('.mynav li.active');
+    target.style.transition = 'none';
+
+    if(active) {
+        const left = active.getBoundingClientRect().left + window.pageXOffset;
+        const top = active.getBoundingClientRect().top + window.pageYOffset;
+
+        target.style.left = `${left}px`;
+        target.style.top = `${top}px`;
+
+    }
+    
+}
