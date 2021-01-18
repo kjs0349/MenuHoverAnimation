@@ -38,7 +38,10 @@ function mouseHover() {
     
     }
 
-    
+    if(target.style.borderColor == 'transparent') {
+        const color = colors[Math.floor((Math.random()*colors.length))];
+        target.style.borderColor = color;
+    }
 }
 
 function mouseLeave() {
