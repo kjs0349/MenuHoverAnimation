@@ -16,10 +16,12 @@ h1 {
 }
 .mynav ul {
     list-style: none;
-    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.mynav ul li {
+    margin: 0 50px;
 }
 .mynav ul li a {
     display: block;
