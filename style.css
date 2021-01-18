@@ -36,4 +36,5 @@ h1 {
     position: absolute;
     border-bottom: 3px solid;
     transition: .3s ease;
+    pointer-events: none;
 }

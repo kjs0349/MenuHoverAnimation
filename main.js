@@ -5,7 +5,11 @@ const colors = ['#1abc9c', '#27ae60', '#3498db', '#8e44ad', '#f1c40f', '#e67e22'
 for(let i = 0; i < links.length; i++){
     links[i].addEventListener('click', e => e.preventDefault());
     links[i].addEventListener('mouseenter', mouseHover);
+    links[i].addEventListener('mouseleave', mouseLeave);
+
 }
+
+
 
 function mouseHover() {
     if(!this.parentNode.classList.contains('active')) {
@@ -17,8 +21,6 @@ function mouseHover() {
         }
         this.parentNode.classList.add('active');
         this.style.opacity = '1';
-        // this.style.transform = 'scale(1.5)';
-
 
         const width = this.getBoundingClientRect().width;
         const height = this.getBoundingClientRect().height;
@@ -33,6 +35,16 @@ function mouseHover() {
         const color = colors[Math.floor((Math.random()*colors.length))];
         target.style.borderColor = color;
 
+    
+    }
+
+    
+}
+
+function mouseLeave() {
+    for(let i = 0; i < links.length; i++) {
+        links[i].style.opacity = '1';
+        target.style.borderColor = 'transparent';
     }
 }
 
