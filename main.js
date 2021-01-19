@@ -52,19 +52,19 @@ function mouseLeave() {
     }
 }
 
-window.addEventListener('resize', resizeScreen);
+// window.addEventListener('resize', resizeScreen);
 
-function resizeScreen() {
-    const active = document.querySelector('.mynav li.active');
-    target.style.transition = 'none';
+// function resizeScreen() {
+//     const active = document.querySelector('.mynav li.active');
+//     target.style.transition = 'none';
 
-    if(active) {
-        const left = active.getBoundingClientRect().left + window.pageXOffset;
-        const top = active.getBoundingClientRect().top + window.pageYOffset;
+//     if(active) {
+//         const left = active.getBoundingClientRect().left + window.pageXOffset;
+//         const top = active.getBoundingClientRect().top + window.pageYOffset;
 
-        target.style.left = `${left}px`;
-        target.style.top = `${top}px`;
+//         target.style.left = `${left}px`;
+//         target.style.top = `${top}px`;
 
-    }
+//     }
     
-}
+// }
