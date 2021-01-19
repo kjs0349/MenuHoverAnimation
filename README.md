@@ -1,6 +1,8 @@
 # MenuHoverAnimation
 마우스를 올리면 따라다니는 메뉴바 애니메이션을 만들어 보았습니다.
 
+![MenuHoverAnimation](https://user-images.githubusercontent.com/61913417/104996853-f4344980-5a6b-11eb-8de9-31ced26bde9a.gif)
+
 ### 구상 과정과 구현
 - 마우스를 올릴 시 메뉴바가 나타나고 따라다니게 하고 싶다!
 	1. 마우스를 올리는 요소에 mouseenter 이벤트를 줘서 마우시가 올라 올 때 동작하게 만든다.
